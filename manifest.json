@@ -6,7 +6,7 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "./assets/GlitchIcon_PurpleonWhite.png",
+    "default_icon": "./assets/GlitchIcon_Purple.png",
     "default_popup": "index.html"
   },
   "permissions": [
