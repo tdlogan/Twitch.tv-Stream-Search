@@ -1,0 +1,166 @@
+html, body {
+  width: 400px;
+  background-color: #262626;
+}
+
+/*** SEARCH HEADER STYLES ***/
+
+#searchHeader {
+  margin: 5% 18% 0;
+  padding: 8%;
+  background-color: #6441A5;
+  border: solid #6441A5 2px;
+  border-bottom: 0;
+}
+
+#twitchLogo {
+  margin-top: -10%;
+  width: 40%;
+  float: right;
+  color: #6441A5;
+}
+
+#queryInput {
+  font-family: 'Oswald', sans-serif;
+  width: 15%;
+}
+
+#querySubmit {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/*** STREAM LIST STYLES ***/
+.navArrows:hover {
+  cursor: pointer;
+}
+
+#listBody {
+  width: 100%;
+}
+
+#streamList {
+  background-color: #F1F1F1;
+  margin: 0 18% 5%;
+  margin-bottom: 0;
+  padding: 0.5% 0.5%;
+  border: solid #6441A5 2px;
+}
+
+#pageSwitch {
+  float: right;
+}
+
+.streamBlocks {
+  width: 100%;
+  height: 18%;
+  display: table;
+  table-layout: fixed;
+}
+
+.streamBlocks:hover {
+  border: solid #6441A5 2px;
+}
+
+.streamName {
+  color: #6441A5;
+  font-family: 'Oswald', sans-serif;
+}
+
+.gameName, .numberViewers {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.streamBlocks tr {
+  width: 100%;
+}
+
+.tableImage {
+  width: 35%;
+}
+
+.tableImage:hover {
+  cursor: pointer;
+}
+
+.streamBlocks img {
+  width: 90%;
+  float: left; 
+}
+
+#mobilePageSwitch {
+  visibility: hidden;
+}
+
+/*MOBILE VERSION HERE*/
+
+@media (max-width: 760px)  {
+
+  #searchHeader {
+    margin: 0;
+    padding-top: 8%;
+  }
+
+  #queryInput {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  #querySubmit {
+    visibility: hidden;
+  }
+
+  #pageSwitch {
+    width: 50%;
+  }
+
+  .navArrows {
+    width: 40%;
+  }
+
+  #streamList {
+    margin: 0;
+  }
+  /* Force table to not be like tables anymore */
+  table, td, tr { 
+    display: block; 
+  }
+  
+  .tableImage {
+    width: 100%;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .tableImage img {
+    width: 100%;
+  }
+
+  .streamName {
+    margin-top: -1%;
+  }
+
+  td { 
+    /* Behave  like a "row" */
+    display: block;
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+  }
+
+  .mobileNavArrows:hover {
+    cursor: pointer;
+  }
+
+  .streamBlocks:hover {
+    border: none;
+  }
+
+}

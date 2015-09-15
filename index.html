@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch Stream Search</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald|Montserrat|Fjalla+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+  <body>
+    <!-- Search Header -->
+    <div id="searchHeader">
+      <input type="text" id="queryInput" placeholder="Search query..."></input>
+      <button id="querySubmit">Search</button>
+      <img src="./assets/Twitch_Logo_White.png" id="twitchLogo">
+    </div>
+    <!-- Streams List -->
+    <div id="streamList">
+      <span>Total Results: <span id="streamCount">0</span></span>
+      <span id="pageSwitch">
+        <button class="navArrows" id="backwardNav" disabled="true">&#x25c0;</button>
+        <span id="currentPage">1</span>/<span id="pageLimit">1</span>
+        <button class="navArrows" id="forwardNav" disabled="true">&#x25b6;</button>
+      </span>
+      <table id="listBody"></table>
+    </div>
+  </body>
+  <script src="js/utilities.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</html>
